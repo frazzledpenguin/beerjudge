@@ -22,6 +22,8 @@ urlpatterns = [
 
     # The home page
     url(r'^$', views.index, name='index'),
-    # The admin page
+    # The admin dashboard
     url(r'^brewadmin/$', views.brewbombers_admin, name='brewbombers_admin'),
+    # The judge admin page
+    url(r'^judge_admin/$', views.judge_admin, name='judge_admin'),
 ]
