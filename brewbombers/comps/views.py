@@ -11,13 +11,17 @@ def index(request):
 
 # This is the main admin page.
 def brewbombers_admin(request):
-    context = {}
+    context = {
+                'nav_class': 'dashboard' # Sets sidebar class to active in template.
+              }
     template = loader.get_template('comps/admin_portal.html')
     return HttpResponse(template.render(context, request))
 
 
 # This is the judge adminstration page. You can add/remove/edit judges here.
 def judge_admin(request):
-    context = {}
+    context = {
+                'nav_class': 'judge'    # Sets sidebar class to active in template.
+              }
     template = loader.get_template('comps/judge_mgmt.html')
     return HttpResponse(template.render(context, request))

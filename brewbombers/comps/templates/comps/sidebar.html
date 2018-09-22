@@ -6,19 +6,19 @@
       </div>
 
       <ul class="nav">
-          <li class="active">
+          <li{% if nav_class == "dashboard" %} class="active" {% endif %}>
               <a href="/brewadmin">
                   <i class="ti-panel"></i>
                   <p>Dashboard</p>
               </a>
           </li>
-          <li>
+          <li{% if nav_class == "judge" %} class="active" {% endif %}>
               <a href="/judge_admin">
                   <i class="ti-user"></i>
                   <p>Judge Management</p>
               </a>
           </li>
-          <li>
+          <li{% if nav_class == "entries" %} class="active" {% endif %}>
               <a href="/entries">
                   <i class="ti-view-list-alt"></i>
                   <p>Homebrew Entries</p>
