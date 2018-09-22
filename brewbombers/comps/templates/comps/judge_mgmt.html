@@ -31,6 +31,7 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="{% static 'comps/assets/css/themify-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'comps/assets/css/all.css' %}" rel="stylesheet">
 
 </head>
 <body>
@@ -95,217 +96,74 @@
 
         <div class="content">
             <div class="container-fluid">
-							  <div class="row"><h5>Current Event Stats - Event name here</h5></div>
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-xs-5">
-                                        <div class="icon-big icon-warning text-center">
-                                            <i class="ti-server"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-7">
-                                        <div class="numbers">
-                                            <p>Beers Judged</p>
-                                            15
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <hr />
-                                    <div class="stats">
-                                        <i class="ti-reload"></i> Out of 26 entered
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-xs-5">
-                                        <div class="icon-big icon-danger text-center">
-                                            <i class="ti-pulse"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-7">
-                                        <div class="numbers">
-                                            <p>Average Score</p>
-                                            31
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <hr />
-                                    <div class="stats">
-                                        <i class="ti-timer"></i> In the last hour
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-xs-5">
-                                        <div class="icon-big icon-info text-center">
-                                            <i class="ti-twitter-alt"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-7">
-                                        <div class="numbers">
-                                            <p>Best Score</p>
-                                            39
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <hr />
-                                    <div class="stats">
-                                        <i class="ti-reload"></i> Updated now
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-xs-5">
-                                        <div class="icon-big icon-info text-center">
-                                            <i class="ti-twitter-alt"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-7">
-                                        <div class="numbers">
-                                            <p>Worst Score</p>
-                                            39
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <hr />
-                                    <div class="stats">
-                                        <i class="ti-reload"></i> Updated now
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="row">
 
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">HomeBrew Competitions</h4>
-                                <p class="category">List of all the competitions entered</p>
-                            </div>
-                            <div class="content">
-														    <div class="content table-responsive table-full-width">
-																	  <table class="table table-striped">
-		                                    <thead>
-		                                        <th>ID</th>
-			                                    	<th>Comp. Name</th>
-			                                    	<th>Date Entered</th>
-			                                    	<th>Number of Judges</th>
-			                                    	<th>Average Score</th>
-		                                    </thead>
-		                                    <tbody>
-		                                        <tr>
-			                                        	<td>1</td>
-			                                        	<td>Oatmeal Stout</td>
-			                                        	<td>Jan 23rd, 2017</td>
-			                                        	<td>11</td>
-			                                        	<td>34</td>
-		                                        </tr>
-		                                        <tr>
-			                                        	<td>1</td>
-			                                        	<td>Oatmeal Stout</td>
-			                                        	<td>Jan 23rd, 2017</td>
-			                                        	<td>11</td>
-			                                        	<td>34</td>
-		                                        </tr>
-		                                        <tr>
-			                                        	<td>1</td>
-			                                        	<td>Oatmeal Stout</td>
-			                                        	<td>Jan 23rd, 2017</td>
-			                                        	<td>11</td>
-			                                        	<td>34</td>
-		                                        </tr>
-		                                        <tr>
-			                                        	<td>1</td>
-			                                        	<td>Oatmeal Stout</td>
-			                                        	<td>Jan 23rd, 2017</td>
-			                                        	<td>11</td>
-			                                        	<td>34</td>
-		                                        </tr>
-																				</tbody>
-																		</table>
+																<div style="float: left">
+		                                <h4 class="title">Judge List</h4>
+		                                <p class="category">Add, remove or edit the judges in the system</p>
 																</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="header">
-                                <h4 class="title">Top Scoring Contestants</h4>
-                                <p class="category">Out of all the entries in all comps, these are the top scoring</p>
+																<div style="float: right">
+																	  <button type="button" class="btn btn-info btn-fill btn-wd btn-sm"><i class="fa fa-plus"></i> Add Judge</button>
+																</div>
+																<div style="clear: both"></div>
                             </div>
                             <div class="content">
 														    <div class="content table-responsive table-full-width">
 																	  <table class="table table-striped">
 		                                    <thead>
-		                                        <th>ID</th>
-			                                    	<th>Entrant Name</th>
-			                                    	<th>Comp. Name</th>
-			                                    	<th>Date Entered</th>
-			                                    	<th>Overall Score</th>
+		                                        <th>Judge ID</th>
+			                                    	<th>Judge Name</th>
+			                                    	<th>Brews Judged</th>
+			                                    	<th>Modify</th>
 		                                    </thead>
 		                                    <tbody>
 		                                        <tr>
 			                                        	<td>1</td>
 			                                        	<td>Jan Smith</td>
-			                                        	<td>Oatmeal Stout</td>
-			                                        	<td>Jan. 23rd, 2017</td>
-			                                        	<td>34</td>
+			                                        	<td>12</td>
+			                                        	<td>
+																									<a href="#"><i class="far fa-edit"></i></a>
+																									<a href="#"><i class="far fa-trash-alt"></i></a>
+																								</td>
 		                                        </tr>
 		                                        <tr>
-			                                        	<td>1</td>
-			                                        	<td>Jan Smith</td>
-			                                        	<td>Oatmeal Stout</td>
-			                                        	<td>Jan. 23rd, 2017</td>
-			                                        	<td>34</td>
+			                                        	<td>2</td>
+			                                        	<td>John Smith</td>
+			                                        	<td>0</td>
+			                                        	<td>
+																									<a href="#"><i class="far fa-edit"></i></a>
+																									<a href="#"><i class="far fa-trash-alt"></i></a>
+																								</td>
 		                                        </tr>
 		                                        <tr>
-			                                        	<td>1</td>
-			                                        	<td>Jan Smith</td>
-			                                        	<td>Oatmeal Stout</td>
-			                                        	<td>Jan. 23rd, 2017</td>
-			                                        	<td>34</td>
+			                                        	<td>3</td>
+			                                        	<td>Bob Smith</td>
+			                                        	<td>17</td>
+			                                        	<td>
+																									<a href="#"><i class="far fa-edit"></i></a>
+																									<a href="#"><i class="far fa-trash-alt"></i></a>
+																								</td>
 		                                        </tr>
 		                                        <tr>
-			                                        	<td>1</td>
-			                                        	<td>Jan Smith</td>
-			                                        	<td>Oatmeal Stout</td>
-			                                        	<td>Jan. 23rd, 2017</td>
-			                                        	<td>34</td>
+			                                        	<td>4</td>
+			                                        	<td>Betty Smith</td>
+			                                        	<td>14</td>
+			                                        	<td>
+																									<a href="#"><i class="far fa-edit"></i></a>
+																									<a href="#"><i class="far fa-trash-alt"></i></a>
+																								</td>
 		                                        </tr>
 		                                        <tr>
-			                                        	<td>1</td>
-			                                        	<td>Jan Smith</td>
-			                                        	<td>Oatmeal Stout</td>
-			                                        	<td>Jan. 23rd, 2017</td>
-			                                        	<td>34</td>
+			                                        	<td>5</td>
+			                                        	<td>Dan Smith</td>
+			                                        	<td>27</td>
+			                                        	<td>
+																									<a href="#"><i class="far fa-edit"></i></a>
+																									<a href="#"><i class="far fa-trash-alt"></i></a>
+																								</td>
 		                                        </tr>
 																				</tbody>
 																		</table>
