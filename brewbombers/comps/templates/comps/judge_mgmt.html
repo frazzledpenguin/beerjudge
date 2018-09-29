@@ -29,6 +29,9 @@
     <link href="{% static 'comps/assets/css/themify-icons.css' %}" rel="stylesheet">
     <link href="{% static 'comps/assets/css/all.css' %}" rel="stylesheet">
 
+		<!-- BrewBombers CSS include -->
+    <link href="{% static 'comps/css/brewbombers.css' %}" rel="stylesheet">
+
 </head>
 <body>
 
@@ -203,11 +206,25 @@
     </div>
 </div>
 
+<!-- Add judge modal form -->
+<div class="add-judge-content">
+	<div class="add-judge-header">
+		<span class="close">&times;</span>
+		<h2>Add Judge</h2>
+	</div>
+	<div class="add-judge-body">
+		<p>The form goes here...</p>
+	</div>
+	<div class="add-judge-footer">
+    <p>Buttons go here.</p>
+	</div>
+</div>
+<!-- End add judge modal form -->
 
 </body>
 
-    <!--   Core JS Files   -->
-    <script src="{% static 'comps/assets/js/jquery-1.10.2.js' %}" type="text/javascript"></script>
+  <!--   Core JS Files   -->
+  <script src="{% static 'comps/assets/js/jquery-1.10.2.js' %}" type="text/javascript"></script>
 	<script src="{% static 'comps/assets/js/bootstrap.min.js' %}" type="text/javascript"></script>
 
 	<!--  Checkbox, Radio & Switch Plugins -->
@@ -216,33 +233,10 @@
 	<!--  Charts Plugin -->
 	<script src="{% static 'comps/assets/js/chartist.min.js' %}"></script>
 
-    <!--  Notifications Plugin    -->
-    <script src="{% static 'comps/assets/js/bootstrap-notify.js' %}"></script>
+  <!--  Notifications Plugin    -->
+  <script src="{% static 'comps/assets/js/bootstrap-notify.js' %}"></script>
 
-    <!--  Google Maps Plugin    -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-
-    <!-- Paper Dashboard Core javascript and methods for Demo purpose -->
-	<script src="{% static 'comps/assets/js/paper-dashboard.js' %}"></script>
-
-	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
-	<script src="{% static 'comps/assets/js/demo.js' %}"></script>
-
-	<script type="text/javascript">
-    	$(document).ready(function(){
-
-        	demo.initChartist();
-
-        	$.notify({
-            	icon: 'ti-gift',
-            	message: "Welcome to <b>Winnipeg Brewbombers - Homebrew Competition Portal</b>."
-
-            },{
-                type: 'success',
-                timer: 4000
-            });
-
-    	});
-	</script>
+  <!-- BrewBombers JS include -->
+  <script src="{% static 'comps/js/brewbombers.js' %}"></script>
 
 </html>
