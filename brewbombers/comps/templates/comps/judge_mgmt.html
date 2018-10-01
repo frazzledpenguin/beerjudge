@@ -105,7 +105,7 @@
 		                                <p class="category">Add, remove or edit the judges in the system</p>
 																</div>
 																<div style="float: right">
-																	  <button type="button" class="btn btn-info btn-fill btn-wd btn-sm"><i class="fa fa-plus"></i> Add Judge</button>
+																	  <button id="add-judge" type="button" class="btn btn-info btn-fill btn-wd btn-sm"><i class="fa fa-plus"></i>Add Judge</button>
 																</div>
 																<div style="clear: both"></div>
                             </div>
@@ -207,17 +207,22 @@
 </div>
 
 <!-- Add judge modal form -->
-<div class="add-judge-content">
-	<div class="add-judge-header">
-		<span class="close">&times;</span>
-		<h2>Add Judge</h2>
-	</div>
-	<div class="add-judge-body">
-		<p>The form goes here...</p>
-	</div>
-	<div class="add-judge-footer">
-    <p>Buttons go here.</p>
-	</div>
+<!-- The Modal -->
+<div id="add-judge-form" class="modal">
+  <!-- Modal content -->
+  <div class="add-judge-modal-content">
+    <div class="add-judge-modal-header">
+      <span class="add-judge-close">&times;</span>
+      Add Judge
+    </div>
+    <div class="add-judge-modal-body">
+      <p>Fill out the form below to add a judge.</p>
+      <p>Form goes here...</p>
+    </div>
+    <div class="add-judge-modal-footer">
+      Buttons go here.
+    </div>
+  </div>
 </div>
 <!-- End add judge modal form -->
 
