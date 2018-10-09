@@ -211,18 +211,23 @@
 <div id="add-judge-form" class="modal">
   <!-- Modal content -->
   <div class="add-judge-modal-content">
-    <div class="add-judge-modal-header">
-      <span class="add-judge-close">&times;</span>
-      Add Judge
-    </div>
-    <div class="add-judge-modal-body">
-      <p>Fill out the form below to add a judge.</p>
-      <p>Form goes here...</p>
-    </div>
-    <div class="add-judge-modal-footer">
-      Buttons go here.
-    </div>
-  </div>
+		<form method="post" action="">
+	    <div class="add-judge-modal-header">
+	      <span class="add-judge-close">&times;</span>
+	      Add Judge
+	    </div>
+	    <div class="add-judge-modal-body">
+	      <p>Fill out the form below to add a judge.</p>
+				<table class="addJudgeForm">
+		      {% csrf_token %}
+					{{ addjudge.as_table }}
+					<tr><td>&nbsp;</td><td><input type="submit" value="Create a new Judge account" /></td></tr>
+				</table>
+	    </div>
+	    <div>
+	    </div>
+	  </div>
+	</form>
 </div>
 <!-- End add judge modal form -->
 
